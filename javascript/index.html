@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Google fonts Source Code Pro -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    <!-- Prism css -->
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/estilo.css?ver=1.1">
+    <title>Miguel Ubilla on Github</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../images/logo.svg" alt="" width="70" height="50" class="d-inline-block align-center">
+            Miguel Ubilla
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMiguelGithub" aria-controls="navbarMiguelGithub" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMiguelGithub">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-right">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Javascript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" aria-disabled="true">Codeigniter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">NodeJs</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+      <!-- jumbotron -->
+      <div class="bg-light p-5 rounded-lg m-3 text-center jumbo shadow-sm">
+        <h1 class="display-4">Javascript <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-code" viewBox="0 0 16 16">
+            <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+          </svg></h1>
+      </div>
+      <!-- jumbotron end -->
+      <!-- contenido -->
+      <div class="container pt-3">
+            <div class="row">
+                <div class="col-4">
+                    <ul class="list-group list-group-flush">
+                    <h3 class="mb-3"><strong>Contenido</strong></h3>
+                        <li class="list-group-item">
+                            <ul>
+                            <li class="item-lista"><a href="#list-item-1">Javascript en archivo externo .js</a></li>
+                            <li class="item-lista"><a href="#list-item-2">Variables y constantes (var, let, const).</a></li>
+                            <li class="item-lista"><a href="#list-item-3">Cadenas.</a></li>
+                            <li class="item-lista">Bucles (for).</li>
+                            <li class="item-lista">Funciones.</li>
+                            <li class="item-lista">Eventos (capturador de eventos, formularios).</li>
+                            <li class="item-lista">Objetos (arrays asociativos, instanciar objetos).</li>
+                            <li class="item-lista">Modo estricto (is strict).</li>
+                            <li class="item-lista">This</li>
+                            <li class="item-lista">Json</li>
+                            <li class="item-lista">Ajax</li>
+                            <li class="item-lista">DOM</li>
+                            <li class="item-lista">BOM</li>
+                            <li class="item-lista">Web worker</li>
+                            <li class="item-lista">cookies, localStorage, sessionStorage</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div data-spy="scroll" data-target="#list-example" data-offset="0" class='col-8' style='max-height: 600px; overflow-y: scroll'>
+                  <h4 id="list-item-1">Incluir Javascript en proyecto</h4>
+                  <p>
+                    Metodo para incluir javascript en un documento web. <br>
+                    - script incrustado en el Html (no recomendado): <br>
+                    <pre><code class="language-markup">
+&lt;script type="text/javascript"&gt;
+codigo javascript...
+&lt;/script&gt;</code></pre>
+                    <br>
+                    - script externo en un archivo .js enlazado al documento Html que hara uso de el (recomendado). <br>
+                    <pre><code class="language-markup">&lt;script type="text/javascript" src=""archivo.js&gt;&lt;/script&gt;</code></pre>
+                    </p>
+                    <hr class="my-5">
+                    <!-- ITEM 2 VARIABLES -->
+                  <h4 id="list-item-2">Variables - constantes</h4>
+                  <p>
+                      <strong>Constantes</strong><br>
+                      Una constante se declara utilizando la palabra reservada <code>const</code>, esta reserva un espacio en la memoria para un tipo de dato que permanecera sin cambios durante la ejecucion del programa. <br>
+                      <pre><code class="language-javascript">const nombre = 'Juan Perez';</code></pre> <br>
+                      Estas deben empezar con un guion bajo "_", una letra, o un signo $. La constante se declara solo una vez y puede ser utilizada en cualquier parte del programa si esta es declarada de forma global, no pudiendose actualizar o cambiar su valor. <br><br>
+                      <strong>Variables</strong><br>
+                      Las variables son partes de la memoria reservada para valores que cambiaran conforme se ejecuta el programa, esta se declaran utilizando la palabra reservada <code>let</code> y su declaracion debe cumplir con los mismos parametros de nombre que las constantes. <br>
+                      <pre><code class="language-javascript">let nombre = 'Juan Perez';
+//aca se inicializo la variable y en la misma linea se le asigno un valor 'Juan Perez'
+// tambien puso realizarse en dos pasos la misma declaracion.
+let = nombre;
+nombre = 'Juan Perez';</code></pre> <br>
+                        En javascript no es necesario indicar el tipo de dato que almacenaran las variables, esto es reconocido automaticamente por js, los tipos de datos pueden ser: <br>
+                        <ul>
+                            <li><strong>undefined</strong>: es una variable o constante declarada pero sin valor definido.</li>
+                            <li><strong>null</strong>: un valor nulo.</li>
+                            <li><strong>booleano</strong>: un valor verdadero o falso (true / false).</li>
+                            <li><strong>number</strong>: un valor numerico que puede ser sujeto a operaciones matematicas.</li>
+                            <li><strong>string</strong>: una cadena de valores alfanumericos que deben asignarse a la variable entre comillas simples o dobles ('', "").</li>
+                            <li><strong>symbol</strong>: un tipo de valor que se utiliza para identificar propiedades dentro de los objetos en js.</li>
+                        </ul>
+                    </p>
+                    <hr class="my-5">
+                    <!-- ITEM 3 CADENAS -->
+                  <h4 id="list-item-3">Cadenas - Strings</h4>
+                  <p>
+                      Las cadenas o strings como se menciono en el punto de las variables, es una variable o constante cuyo contenido es un valor alfanumerico, el valor se asigna encerrando su contenido entre comillas simples o dobles (''. ""), aunque en ECMAScript6 se introdujo una nueva forma de
+                      asignar valores a un string mediante el uso de Backtick (``), que son algo como comillas simples pero en diagonal a la izquierda, la gracia de esta nueva forma es que podemos construir plantillas de strings de una mejor forma que concatenando valores con el operador (+). <br>
+                      <pre><code class="language-javascript">// con el uso de backtick
+let nombre = 'Juan Perez';
+let saludo = 'buenos dias';
+console.log(`al señor ${nombre}, le deseamos ${saludo}.`)
+// Resultado: al señor Juan Perez, le deseamos buenos dias.
+
+// con el metodo siempre utilizando
+// se omite la declaracion de variables ya que son las mismas
+console.log('al señor' + nombre + ', le deseamos' + saludo + '.')
+resultado//: al señor Juan Perez, le deseamos buenos dias.</code></pre> <br>
+                        Como se puede observar la simpleza y limpieza de codigo al utilizar backtick es fenomenal, hay que indicar que las variables se deben incluir encerrando el nombre de la variable entre llaves <code>{}</code> y precedida del signo $, <code>${variable}</code> <br>
+                        Un aspecto a destacar es que las expresiones matematicas entre variables (si son numericas) que se encuentran entre backtick se ejecutan.
+                        <pre><code class="language-javascript">let numero1 = 2;
+let numero2 = 4;
+console.log(`el resultado de la suma de ${numero1} + ${numero2} = ${numero 1 +  numero2}`);
+// muestra en consola: el resultado de la suma de 2 + 4 = 6
+// mostrando el signo + que esta fuera de los ${} solo como un caracter en la cadena, pero 
+// ejecutado una operacion matmatica con el signo + que se encuentra entre ${}</code></pre> <br>
+                     </p>
+                  <h4 id="list-item-4">Item 4</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus turpis augue, aliquam egestas nunc semper sit amet. Vivamus vel euismod eros. Fusce aliquam vitae nisi quis suscipit. Nullam rutrum convallis dui, a pharetra nulla dapibus eget. In diam justo, finibus in commodo fermentum, maximus sit amet tellus. </p>
+                </div>
+
+              
+            </div><!-- End col 8  -->
+        
+        <pre><code class="language-javascript">console.log('estare aqui para ser tu libreta de referencia');</code></pre>
+      </div>
+      <!-- contenido end -->
+
+    </div><!--  fin container-fuid -->
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-4 py-3">
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-light">
+        <blockquote class="blockquote">
+          <p class="text-muted">2021 Miguel Ubilla Rocco</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Porque la memoria falla, hay que tener apuntes a mano, como este sitio.
+        </figcaption>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+    <!-- Prism Js -->
+    <script src="../assets/js/prism.js"></script>
+  </body>
+</html>
