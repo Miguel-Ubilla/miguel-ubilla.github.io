@@ -21,7 +21,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index">
             <img src="../images/logo.svg" alt="" width="70" height="50" class="d-inline-block align-center">
             Miguel Ubilla
           </a>
@@ -67,6 +67,7 @@
                             <li class="item-lista"><a href="#list-item-1">Javascript en archivo externo .js</a></li>
                             <li class="item-lista"><a href="#list-item-2">Variables y constantes (var, let, const).</a></li>
                             <li class="item-lista"><a href="#list-item-3">Cadenas.</a></li>
+                            <li class="item-lista"><a href="#list-item-4">Condicionales.</a></li>
                             <li class="item-lista">Bucles (for).</li>
                             <li class="item-lista">Funciones.</li>
                             <li class="item-lista">Eventos (capturador de eventos, formularios).</li>
@@ -94,7 +95,7 @@ codigo javascript...
 &lt;/script&gt;</code></pre>
                     <br>
                     - script externo en un archivo .js enlazado al documento Html que hara uso de el (recomendado). <br>
-                    <pre><code class="language-markup">&lt;script type="text/javascript" src=""archivo.js&gt;&lt;/script&gt;</code></pre>
+                    <pre><code class="language-markup">&lt;script src=""archivo.js&gt;&lt;/script&gt;</code></pre>
                     </p>
                     <hr class="my-5">
                     <!-- ITEM 2 VARIABLES -->
@@ -144,17 +145,46 @@ let numero2 = 4;
 console.log(`el resultado de la suma de ${numero1} + ${numero2} = ${numero 1 +  numero2}`);
 // muestra en consola: el resultado de la suma de 2 + 4 = 6
 // mostrando el signo + que esta fuera de los ${} solo como un caracter en la cadena, pero 
-// ejecutado una operacion matmatica con el signo + que se encuentra entre ${}</code></pre> <br>
+// ejecutado una operacion matmatica con el signo + que se encuentra dentro de ${}</code></pre> <br>
+Tambien es posible insertar codigo html en las plantillas string que utilizan backtick<br>
+<pre><code class="language-javascript">console.log(`el siguiete texto esta en &lt;strong>negrita&lt;/strong>`)</code></pre><br>
+Como ultima caracteristica recomendable tambien esta el uso de cadenas multilinea mediante el uso de backtick solamente, aunque para ser bien representados los saltos de linea en el navegador se debe utilizar una etiqueta <code>&lt;pre>&lt;/pre></code>
+<pre><code class="language-javascript">//documento html: 
+&lt;pre id="mensaje">&lt;/pre>
+
+// script
+let mensaje = `este es
+un mensaje
+multilinea`;
+document.getElementById('mensaje').innerHTML = mensaje;</code></pre><br>
                      </p>
-                  <h4 id="list-item-4">Item 4</h4>
+                     <hr class="my-5">
+                    <!-- ITEM 4 CONDICIONALES -->
+                  <h4 id="list-item-4">Condicionales</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus turpis augue, aliquam egestas nunc semper sit amet. Vivamus vel euismod eros. Fusce aliquam vitae nisi quis suscipit. Nullam rutrum convallis dui, a pharetra nulla dapibus eget. In diam justo, finibus in commodo fermentum, maximus sit amet tellus. </p>
+                      Son instrucciones que evaluan si una sentencia es verdadera o falsa (true / false) para luego dependiendo de este resultado tomar una u otra accion en la ejecucion del programa. <br>
+                      <code class="language-javascript">if</code> es utilizada para analizar variables, operaciones, o propiedades de objetos, su resultado siempre sera un valor booleano (true / false). <br>
+                      <strong>Operadores</strong> Son parte fundamental en una sentencia If, ya que son los encargados de realizar la comparativa necesaria entre los valores de la sentencia. <br>
+                      Los operadores en Javascript son los siuientes: <br>
+                      <code class="language-javascript">=</code> El operador de igualdad asigna un valor a una variable o string. ej: let dia = martes; numero = 1; etc. <br>
+                      <code class="language-javascript">==</code> EL operador de igualdad compara dos expresiones o valores que para retornar true deben ser iguales en valor aunque no lo sean en el tipo de dato. ej: numero == "3", esto comrueba que numero sea igual a "3" como cadena, lo que seria lo mismo que numero == 3, comprobado como numero. <br>
+                      <code class="language-javascript">===</code>El operador comparativo compara la iagualdad entre expresiones tanto en valor como en el tipo de datos, para que retorne true ambas deben coinidir. ej: numero === "5" retornara false ya que 5 esta entre comillas lo que transforma este en string en vez de numero. <br>
+                      <code class="language-javascript">!=</code> Este operador verifica la no igualdad entre expresiones. De no encontrar igualdad retornara True. <br>
+                      <code class="language-javascript">></code> Valida que la expresion de la izquierda sea mayor que la de la derecha. <br>
+                      <code class="language-javascript">&lt;</code> Valida que la expresion de la izquierda sea menor que la de la derecha. <br>
+                      <code class="language-javascript">>=</code> Valida que la expresion de la izquierda sea mayor o igual a la de la derecha. <br>
+                      <code class="language-javascript">&lt;=</code> Valida que la expresion de la izquierda sea menos o igual a la de la derecha. <br>
+                      <pre><code class="language-javascript">if(variableA == variableB) {
+// codigo a ejecutar si resultado es true
+} else {
+// codigo a ejecutar si resultado es false
+// puede omitirse este "else" si el programa no debe tomar una accion frente a un resultado false.
+}</code></pre><br>
+                   </p>
                 </div>
 
               
             </div><!-- End col 8  -->
-        
-        <pre><code class="language-javascript">console.log('estare aqui para ser tu libreta de referencia');</code></pre>
       </div>
       <!-- contenido end -->
 
